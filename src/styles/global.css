@@ -1,7 +1,5 @@
-/* Tailwind CSS 기본 레이어 */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind CSS Import */
+@import "tailwindcss";
 
 /* 글로벌 스타일 */
 * {
