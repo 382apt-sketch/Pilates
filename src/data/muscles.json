@@ -1,0 +1,137 @@
+[
+  {
+    "id": "pec_major",
+    "label_ko": "대흉근",
+    "label_en": "Pectoralis Major",
+    "side": "front",
+    "svg_region_id": "m_pec_major",
+    "default_strength": "normal",
+    "description": "가슴의 큰 근육으로 팔을 앞으로 움직이고 회전시킵니다."
+  },
+  {
+    "id": "upper_trap",
+    "label_ko": "승모근 상부",
+    "label_en": "Upper Trapezius",
+    "side": "back",
+    "svg_region_id": "m_upper_trap",
+    "default_strength": "normal",
+    "description": "목과 어깨를 연결하는 근육으로 어깨를 올리는 역할을 합니다."
+  },
+  {
+    "id": "mid_trap",
+    "label_ko": "승모근 중부",
+    "label_en": "Mid Trapezius",
+    "side": "back",
+    "svg_region_id": "m_mid_trap",
+    "default_strength": "normal",
+    "description": "견갑골을 안쪽으로 당기는 역할을 합니다."
+  },
+  {
+    "id": "lower_trap",
+    "label_ko": "승모근 하부",
+    "label_en": "Lower Trapezius",
+    "side": "back",
+    "svg_region_id": "m_lower_trap",
+    "default_strength": "normal",
+    "description": "견갑골을 아래로 내리고 안정화시킵니다."
+  },
+  {
+    "id": "rhomboids",
+    "label_ko": "능형근",
+    "label_en": "Rhomboids",
+    "side": "back",
+    "svg_region_id": "m_rhomboids",
+    "default_strength": "normal",
+    "description": "견갑골을 척추 쪽으로 당기는 역할을 합니다."
+  },
+  {
+    "id": "anterior_delt",
+    "label_ko": "전면 삼각근",
+    "label_en": "Anterior Deltoid",
+    "side": "front",
+    "svg_region_id": "m_anterior_delt",
+    "default_strength": "normal",
+    "description": "어깨 앞쪽 근육으로 팔을 앞으로 들어올립니다."
+  },
+  {
+    "id": "abs",
+    "label_ko": "복직근",
+    "label_en": "Rectus Abdominis",
+    "side": "front",
+    "svg_region_id": "m_abs",
+    "default_strength": "normal",
+    "description": "복부 중앙의 근육으로 몸통을 굽히는 역할을 합니다."
+  },
+  {
+    "id": "lower_back",
+    "label_ko": "척추기립근",
+    "label_en": "Erector Spinae",
+    "side": "back",
+    "svg_region_id": "m_lower_back",
+    "default_strength": "normal",
+    "description": "등 아래쪽 근육으로 척추를 펴고 자세를 유지합니다."
+  },
+  {
+    "id": "hip_flexors",
+    "label_ko": "고관절 굴곡근",
+    "label_en": "Hip Flexors",
+    "side": "front",
+    "svg_region_id": "m_hip_flexors",
+    "default_strength": "normal",
+    "description": "허벅지를 몸통 쪽으로 당기는 근육입니다."
+  },
+  {
+    "id": "glutes",
+    "label_ko": "둔근",
+    "label_en": "Gluteus Maximus",
+    "side": "back",
+    "svg_region_id": "m_glutes",
+    "default_strength": "normal",
+    "description": "엉덩이의 큰 근육으로 고관절을 펴고 안정화시킵니다."
+  },
+  {
+    "id": "hamstrings",
+    "label_ko": "햄스트링",
+    "label_en": "Hamstrings",
+    "side": "back",
+    "svg_region_id": "m_hamstrings",
+    "default_strength": "normal",
+    "description": "허벅지 뒤쪽 근육으로 무릎을 굽히고 고관절을 펍니다."
+  },
+  {
+    "id": "quadriceps",
+    "label_ko": "대퇴사두근",
+    "label_en": "Quadriceps",
+    "side": "front",
+    "svg_region_id": "m_quadriceps",
+    "default_strength": "normal",
+    "description": "허벅지 앞쪽 근육으로 무릎을 펴는 역할을 합니다."
+  },
+  {
+    "id": "calves",
+    "label_ko": "종아리근",
+    "label_en": "Gastrocnemius",
+    "side": "back",
+    "svg_region_id": "m_calves",
+    "default_strength": "normal",
+    "description": "종아리 근육으로 발목을 펴고 걷는데 중요합니다."
+  },
+  {
+    "id": "neck_flexors",
+    "label_ko": "목 굴곡근",
+    "label_en": "Neck Flexors",
+    "side": "front",
+    "svg_region_id": "m_neck_flexors",
+    "default_strength": "normal",
+    "description": "목 앞쪽 근육으로 머리를 앞으로 숙입니다."
+  },
+  {
+    "id": "neck_extensors",
+    "label_ko": "목 신전근",
+    "label_en": "Neck Extensors",
+    "side": "back",
+    "svg_region_id": "m_neck_extensors",
+    "default_strength": "normal",
+    "description": "목 뒤쪽 근육으로 머리를 뒤로 젖힙니다."
+  }
+]

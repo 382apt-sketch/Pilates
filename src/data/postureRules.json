@@ -1,0 +1,162 @@
+{
+  "rules": [
+    {
+      "id": "rounded_shoulders",
+      "name_ko": "말린 어깨 (라운드 숄더)",
+      "name_en": "Rounded Shoulders",
+      "triggers": {
+        "weak": ["mid_trap", "lower_trap", "rhomboids"],
+        "strong": ["pec_major", "anterior_delt"]
+      },
+      "description_ko": "등 중부와 하부가 약하고 가슴과 전면 어깨가 강하면 어깨가 앞으로 말립니다.",
+      "description_en": "When mid/lower back is weak and chest/front shoulders are strong, shoulders round forward.",
+      "recommended_exercises": [
+        "페이스풀 (Face Pull)",
+        "백 익스텐션 (Back Extension)",
+        "가슴 스트레칭 (Chest Stretch)",
+        "밴드 풀 아파트 (Band Pull Apart)"
+      ],
+      "severity_calculation": "average"
+    },
+    {
+      "id": "forward_head",
+      "name_ko": "거북목",
+      "name_en": "Forward Head Posture",
+      "triggers": {
+        "weak": ["neck_flexors", "mid_trap"],
+        "strong": ["neck_extensors", "upper_trap"]
+      },
+      "description_ko": "목 앞쪽과 등 중부가 약하고 목 뒤쪽과 승모근 상부가 강하면 머리가 앞으로 나갑니다.",
+      "description_en": "When front neck and mid back are weak while back neck and upper traps are strong, head protrudes forward.",
+      "recommended_exercises": [
+        "친 턱 (Chin Tuck)",
+        "목 굴곡 운동 (Neck Flexor Strengthening)",
+        "등 상부 스트레칭 (Upper Back Stretch)",
+        "벽 천사 운동 (Wall Angels)"
+      ],
+      "severity_calculation": "average"
+    },
+    {
+      "id": "anterior_pelvic_tilt",
+      "name_ko": "골반 전방 경사",
+      "name_en": "Anterior Pelvic Tilt",
+      "triggers": {
+        "weak": ["abs", "glutes", "hamstrings"],
+        "strong": ["hip_flexors", "lower_back"]
+      },
+      "description_ko": "복근, 둔근, 햄스트링이 약하고 고관절 굴곡근과 허리가 강하면 골반이 앞으로 기울어집니다.",
+      "description_en": "When abs, glutes, and hamstrings are weak while hip flexors and lower back are strong, pelvis tilts forward.",
+      "recommended_exercises": [
+        "데드버그 (Dead Bug)",
+        "글루트 브릿지 (Glute Bridge)",
+        "고관절 굴곡근 스트레칭 (Hip Flexor Stretch)",
+        "플랭크 (Plank)"
+      ],
+      "severity_calculation": "average"
+    },
+    {
+      "id": "posterior_pelvic_tilt",
+      "name_ko": "골반 후방 경사",
+      "name_en": "Posterior Pelvic Tilt",
+      "triggers": {
+        "weak": ["lower_back", "hip_flexors"],
+        "strong": ["abs", "glutes"]
+      },
+      "description_ko": "허리와 고관절 굴곡근이 약하고 복근과 둔근이 과도하게 강하면 골반이 뒤로 기울어집니다.",
+      "description_en": "When lower back and hip flexors are weak while abs and glutes are overly strong, pelvis tilts backward.",
+      "recommended_exercises": [
+        "코브라 자세 (Cobra Pose)",
+        "허리 신전 운동 (Back Extension)",
+        "햄스트링 스트레칭 (Hamstring Stretch)",
+        "고양이-소 자세 (Cat-Cow Stretch)"
+      ],
+      "severity_calculation": "average"
+    },
+    {
+      "id": "kyphosis",
+      "name_ko": "굽은 등 (후만증)",
+      "name_en": "Thoracic Kyphosis",
+      "triggers": {
+        "weak": ["mid_trap", "lower_trap", "rhomboids", "lower_back"],
+        "strong": ["pec_major", "abs"]
+      },
+      "description_ko": "등 전체가 약하고 가슴과 복부가 강하면 등이 굽습니다.",
+      "description_en": "When entire back is weak and chest/abs are strong, upper back rounds excessively.",
+      "recommended_exercises": [
+        "등 신전 운동 (Thoracic Extension)",
+        "로우 (Rowing)",
+        "폼롤러 등 스트레칭 (Foam Roller Thoracic Extension)",
+        "Y-T-W 운동 (Y-T-W Raises)"
+      ],
+      "severity_calculation": "average"
+    },
+    {
+      "id": "knee_valgus",
+      "name_ko": "무릎 외반 (X자 다리)",
+      "name_en": "Knee Valgus",
+      "triggers": {
+        "weak": ["glutes", "hamstrings"],
+        "strong": ["quadriceps"]
+      },
+      "description_ko": "둔근과 햄스트링이 약하고 대퇴사두근이 강하면 무릎이 안쪽으로 모입니다.",
+      "description_en": "When glutes and hamstrings are weak while quads are strong, knees cave inward.",
+      "recommended_exercises": [
+        "클램쉘 (Clamshell)",
+        "사이드 레그 레이즈 (Side Leg Raise)",
+        "글루트 브릿지 (Glute Bridge)",
+        "몬스터 워크 (Monster Walk)"
+      ],
+      "severity_calculation": "average"
+    },
+    {
+      "id": "lower_crossed_syndrome",
+      "name_ko": "하부 교차 증후군",
+      "name_en": "Lower Crossed Syndrome",
+      "triggers": {
+        "weak": ["abs", "glutes"],
+        "strong": ["hip_flexors", "lower_back"]
+      },
+      "description_ko": "복근과 둔근이 약하고 고관절 굴곡근과 허리가 강한 전형적인 자세 불균형 패턴입니다.",
+      "description_en": "A typical postural imbalance pattern with weak abs/glutes and tight hip flexors/lower back.",
+      "recommended_exercises": [
+        "플랭크 (Plank)",
+        "버드독 (Bird Dog)",
+        "고관절 굴곡근 스트레칭 (Hip Flexor Stretch)",
+        "글루트 활성화 (Glute Activation)"
+      ],
+      "severity_calculation": "average"
+    }
+  ],
+  "strength_levels": {
+    "very_weak": {
+      "value": -2,
+      "label_ko": "매우 약함",
+      "label_en": "Very Weak",
+      "color": "#ff4d4d"
+    },
+    "weak": {
+      "value": -1,
+      "label_ko": "약함",
+      "label_en": "Weak",
+      "color": "#ff944d"
+    },
+    "normal": {
+      "value": 0,
+      "label_ko": "보통",
+      "label_en": "Normal",
+      "color": "#f2f2f2"
+    },
+    "strong": {
+      "value": 1,
+      "label_ko": "강함",
+      "label_en": "Strong",
+      "color": "#8cc6ff"
+    },
+    "very_strong": {
+      "value": 2,
+      "label_ko": "매우 강함",
+      "label_en": "Very Strong",
+      "color": "#1e90ff"
+    }
+  }
+}
