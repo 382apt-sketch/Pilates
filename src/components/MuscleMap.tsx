@@ -30,7 +30,10 @@ const MuscleMap: React.FC = () => {
     const svgPath = viewSide === 'front' ? '/static/body-front.svg' : '/static/body-back.svg';
     
     fetch(svgPath)
-      .then(res => res.text())
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+        return res.text();
+      })
       .then(svgText => {
         container.innerHTML = svgText;
         

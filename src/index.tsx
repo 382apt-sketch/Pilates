@@ -3,7 +3,7 @@ import { serveStatic } from 'hono/cloudflare-workers';
 
 const app = new Hono();
 
-// 정적 파일 서빙
+// 정적 파일 서빙 (Cloudflare Pages)
 app.use('/static/*', serveStatic({ root: './' }));
 
 // 메인 HTML 페이지
