@@ -1,184 +1,263 @@
 # 💪 근육 강도 시각화 & 자세 분석 웹앱
 
-사용자의 근육 상태를 시각화하고, 자세 이상을 자동으로 분석하여 맞춤형 운동을 추천하는 웹 애플리케이션입니다.
+사용자의 근육 강도를 시각적으로 입력하고, 자세 이상을 자동으로 분석하는 웹 애플리케이션입니다.
 
-## 🌐 URL 정보
+## 🌟 주요 기능
 
-- **개발 서버**: https://3000-i7pg3vh2uudp7x9e0xy02-583b4d74.sandbox.novita.ai
-- **프로젝트 이름**: webapp
-- **GitHub**: (추후 업데이트 예정)
+### ✅ 완료된 기능
 
-## ✨ 주요 기능
+1. **인체 근육 맵 시각화 (2D SVG)**
+   - 전면/후면 인체 일러스트
+   - 15개 주요 근육 부위 표시
+   - 클릭 가능한 인터랙티브 SVG
 
-### 완료된 기능
-- ✅ 15개 주요 근육 부위 데이터 (전면/후면)
-- ✅ 2D SVG 인체 일러스트 (클릭 가능한 근육 영역)
-- ✅ 5단계 근육 강도 선택 (매우 약함 ~ 매우 강함)
-- ✅ 실시간 색상 변경 (강도에 따른 시각적 피드백)
-- ✅ 7가지 자세 이상 자동 분석
-  - 말린 어깨 (라운드 숄더)
-  - 거북목
-  - 골반 전방 경사
-  - 골반 후방 경사
-  - 굽은 등 (후만증)
-  - 무릎 외반 (X자 다리)
-  - 하부 교차 증후군
-- ✅ 자세별 추천 운동 및 스트레칭
-- ✅ PDF 리포트 다운로드
-- ✅ 로컬스토리지 자동 저장/로드
-- ✅ 전문가 모드 (JSON Export/Import)
-- ✅ 반응형 디자인 (모바일 지원)
+2. **근육 강도 선택**
+   - 5단계 강도 레벨 (매우 약함 ~ 매우 강함)
+   - 색상으로 강도 시각화
+   - 실시간 색상 업데이트
 
-### 진행 중인 기능
-- 🔄 UI/UX 개선 및 애니메이션 추가
-- 🔄 3D 인체 모델 (Three.js) 추가
+3. **자세 분석 엔진**
+   - 7가지 자세 이상 자동 감지
+     - 말린 어깨 (라운드 숄더)
+     - 거북목
+     - 골반 전방/후방 경사
+     - 굽은 등 (후만증)
+     - 무릎 외반
+     - 하부 교차 증후군
+   - 심각도 점수 계산
+   - 원인 근육 표시
 
-### 미완료 기능
-- ❌ 전문가용 규칙 편집 패널
-- ❌ 근육 데이터 JSON 편집 UI
-- ❌ 클라우드 저장 기능 (계정 시스템)
+4. **PDF 다운로드**
+   - 근육 강도 현황 요약
+   - 자세 분석 결과
+   - 추천 운동/스트레칭 포함
 
-## 📊 기능별 URI 정리
+5. **전문가 모드**
+   - JSON Export/Import
+   - 데이터 백업 및 공유
+   - 설정 파일 관리
 
-### 메인 페이지
-- **URL**: `/`
-- **기능**: 전체 앱 인터페이스
-- **설명**: 근육 맵, 선택 패널, 자세 분석 결과를 모두 포함
+6. **로컬스토리지 저장**
+   - 자동 저장/로드
+   - 브라우저 종료 후에도 데이터 유지
 
-### API 엔드포인트
-- **Health Check**: `/api/health`
-  - **Method**: GET
-  - **Response**: `{ "status": "ok", "timestamp": "2024-11-19T..." }`
+## 🚀 URL 및 접근 정보
 
-### 정적 파일
-- **SVG 일러스트**: 
-  - `/static/body-front.svg` (전면 인체)
-  - `/static/body-back.svg` (후면 인체)
-- **CSS**: `/static/style.css`
+### 개발 환경 (Sandbox)
+- **URL**: https://3000-i7pg3vh2uudp7x9e0xy02-583b4d74.sandbox.novita.ai
+- **API Health Check**: https://3000-i7pg3vh2uudp7x9e0xy02-583b4d74.sandbox.novita.ai/api/health
+- **상태**: ✅ Active
 
-## 🗄️ 데이터 구조
+### GitHub 저장소
+- **저장소**: (GitHub 설정 후 추가 예정)
+
+## 📊 데이터 구조
 
 ### 근육 데이터 (muscles.json)
 ```json
-{
-  "id": "pec_major",
-  "label_ko": "대흉근",
-  "label_en": "Pectoralis Major",
-  "side": "front",
-  "svg_region_id": "m_pec_major",
-  "default_strength": "normal",
-  "description": "가슴의 큰 근육..."
-}
+[
+  {
+    "id": "pec_major",
+    "label_ko": "대흉근",
+    "label_en": "Pectoralis Major",
+    "side": "front",
+    "svg_region_id": "m_pec_major",
+    "default_strength": "normal",
+    "description": "가슴의 큰 근육으로 팔을 앞으로 움직이고 회전시킵니다."
+  }
+  // ... 15개 근육 데이터
+]
 ```
 
 ### 자세 규칙 (postureRules.json)
 ```json
 {
-  "id": "rounded_shoulders",
-  "name_ko": "말린 어깨",
-  "triggers": {
-    "weak": ["mid_trap", "lower_trap"],
-    "strong": ["pec_major", "anterior_delt"]
-  },
-  "recommended_exercises": [...]
+  "rules": [
+    {
+      "id": "rounded_shoulders",
+      "name_ko": "말린 어깨 (라운드 숄더)",
+      "triggers": {
+        "weak": ["mid_trap", "lower_trap", "rhomboids"],
+        "strong": ["pec_major", "anterior_delt"]
+      },
+      "recommended_exercises": ["페이스풀", "백 익스텐션", ...]
+    }
+    // ... 7가지 자세 규칙
+  ],
+  "strength_levels": {
+    "very_weak": { "value": -2, "label_ko": "매우 약함", "color": "#ff4d4d" },
+    "weak": { "value": -1, "label_ko": "약함", "color": "#ff944d" },
+    "normal": { "value": 0, "label_ko": "보통", "color": "#f2f2f2" },
+    "strong": { "value": 1, "label_ko": "강함", "color": "#8cc6ff" },
+    "very_strong": { "value": 2, "label_ko": "매우 강함", "color": "#1e90ff" }
+  }
 }
 ```
 
-### 강도 레벨
-- `very_weak` (-2): #ff4d4d (빨강)
-- `weak` (-1): #ff944d (주황)
-- `normal` (0): #f2f2f2 (회색)
-- `strong` (1): #8cc6ff (하늘색)
-- `very_strong` (2): #1e90ff (파랑)
+## 🎯 사용 방법
 
-## 💾 스토리지 서비스
+1. **근육 선택**
+   - 전면/후면 버튼으로 보기 전환
+   - SVG 맵에서 근육 클릭 또는 목록에서 선택
 
-현재는 **로컬스토리지**만 사용합니다:
-- `muscle-storage`: 근육 상태 데이터 저장
-- 자동 저장/로드 (Zustand persist)
+2. **강도 입력**
+   - 오른쪽 패널에서 5단계 중 선택
+   - 여러 근육의 강도를 입력
 
-향후 확장 계획:
-- Cloudflare KV: 사용자 설정 저장
-- Cloudflare D1: 히스토리 및 분석 데이터
-- Cloudflare R2: PDF 리포트 백업
+3. **자세 분석 확인**
+   - 자동으로 자세 이상 감지
+   - 심각도와 추천 운동 확인
 
-## 📱 사용 방법
+4. **PDF 다운로드**
+   - "PDF 다운로드" 버튼 클릭
+   - 분석 결과 저장
 
-### 1. 근육 강도 입력
-1. 전면/후면 전환 버튼으로 보기 선택
-2. 근육 맵에서 원하는 근육 클릭
-3. 오른쪽 패널에서 강도 선택 (매우 약함 ~ 매우 강함)
-4. 색상이 자동으로 변경됨
+5. **데이터 관리 (전문가 모드)**
+   - "전문가 모드" 버튼 클릭
+   - JSON Export/Import로 데이터 백업
 
-### 2. 자세 분석 확인
-- 여러 근육의 강도를 입력하면 자동으로 자세 이상 분석
-- 심각도, 원인 근육, 추천 운동 확인
+## 🛠 기술 스택
 
-### 3. PDF 다운로드
-- "PDF 다운로드" 버튼 클릭
-- 근육 상태 + 자세 분석 리포트 생성
+### Frontend
+- **React 19** - UI 라이브러리
+- **TypeScript** - 타입 안전성
+- **Zustand** - 상태 관리
+- **TailwindCSS v4** - 스타일링
+- **jsPDF** - PDF 생성
+- **html2canvas** - HTML to Canvas 변환
 
-### 4. 데이터 백업 (전문가 모드)
-- "전문가 모드" 버튼 클릭
-- JSON 파일로 내보내기/가져오기
-- 클립보드 복사/붙여넣기로 공유 가능
+### Backend
+- **Hono** - 경량 웹 프레임워크
+- **Cloudflare Pages** - 엣지 배포 플랫폼
+- **Vite** - 빌드 도구
 
-## 🚀 배포 정보
+### 데이터
+- **JSON 기반** - 확장 가능한 데이터 구조
+- **로컬스토리지** - 클라이언트 사이드 저장
 
-### 현재 상태
-- **플랫폼**: Cloudflare Pages (예정)
-- **개발 환경**: Sandbox (PM2 + Wrangler)
-- **기술 스택**: 
-  - Backend: Hono (TypeScript)
-  - Frontend: React 19 + Zustand
-  - Styling: TailwindCSS
-  - PDF: jsPDF
-  - Build: Vite
+## 📁 프로젝트 구조
+
+```
+webapp/
+├── src/
+│   ├── components/        # React 컴포넌트
+│   │   ├── App.tsx        # 메인 앱
+│   │   ├── MuscleMap.tsx  # 근육 맵
+│   │   ├── SelectorPanel.tsx  # 강도 선택
+│   │   ├── PostureAnalysis.tsx  # 자세 분석
+│   │   ├── PDFGenerator.tsx  # PDF 생성
+│   │   └── ExportImportPanel.tsx  # 데이터 관리
+│   ├── data/              # JSON 데이터
+│   │   ├── muscles.json   # 근육 정보
+│   │   └── postureRules.json  # 자세 규칙
+│   ├── store/             # Zustand 스토어
+│   │   └── muscleStore.ts
+│   ├── utils/             # 유틸리티
+│   │   └── postureAnalysis.ts  # 분석 엔진
+│   ├── styles/            # 스타일
+│   │   └── global.css
+│   ├── index.tsx          # Hono 서버
+│   └── client.tsx         # React 엔트리
+├── public/
+│   └── static/
+│       ├── body-front.svg  # 전면 SVG
+│       └── body-back.svg   # 후면 SVG
+├── dist/                  # 빌드 결과물
+├── wrangler.jsonc         # Cloudflare 설정
+├── vite.config.ts         # Vite 설정
+├── package.json           # 의존성 관리
+├── ecosystem.config.cjs   # PM2 설정
+└── README.md              # 프로젝트 문서
+```
+
+## 🚀 개발 및 배포
 
 ### 로컬 개발
 ```bash
-npm run build          # 프로젝트 빌드
-pm2 start ecosystem.config.cjs  # 개발 서버 시작
-pm2 logs muscle-webapp --nostream  # 로그 확인
+# 의존성 설치
+npm install
+
+# 빌드
+npm run build
+
+# 개발 서버 시작 (PM2)
+pm2 start ecosystem.config.cjs
+
+# 서버 테스트
+curl http://localhost:3000
 ```
 
-### 프로덕션 배포 (예정)
+### Cloudflare Pages 배포
 ```bash
-npm run deploy:prod    # Cloudflare Pages 배포
+# 빌드 및 배포
+npm run deploy
+
+# 프로덕션 배포 (프로젝트명 지정)
+npm run deploy:prod
 ```
 
-## 🎯 추천 다음 단계
+### 유용한 명령어
+```bash
+# 포트 정리
+npm run clean-port
 
-1. **UI 개선**
-   - 애니메이션 효과 추가
-   - 근육 호버 시 정보 툴팁
-   - 자세 분석 차트 시각화
+# Git 커밋
+npm run git:commit "커밋 메시지"
 
-2. **기능 확장**
-   - 3D 인체 모델 추가 (Three.js)
-   - 통증 부위 표시 기능
-   - 히스토리 추적 (시간별 변화)
+# 서버 상태 확인
+pm2 list
 
-3. **전문가 모드 고도화**
-   - 근육 데이터 직접 편집 UI
-   - 자세 규칙 커스터마이징
-   - PDF 템플릿 편집
+# 로그 확인
+pm2 logs muscle-analyzer --nostream
+```
 
-4. **클라우드 기능**
-   - 사용자 계정 시스템
-   - Cloudflare D1 데이터베이스 연동
-   - 데이터 동기화
+## 📈 향후 개발 계획
+
+### Phase 1 (완료) ✅
+- [x] 기본 근육 맵 (2D SVG)
+- [x] 강도 선택 UI
+- [x] 자세 분석 엔진
+- [x] PDF 생성
+- [x] 전문가 모드
+
+### Phase 2 (예정)
+- [ ] 3D 근육 모델 (Three.js)
+- [ ] 더 많은 근육 부위 (30-40개)
+- [ ] 통증 부위 표시 기능
+- [ ] 운동 비디오 링크
+- [ ] 다국어 지원 (영어, 일본어)
+
+### Phase 3 (예정)
+- [ ] 계정 시스템
+- [ ] 클라우드 저장 (Cloudflare D1)
+- [ ] 진행 상황 추적
+- [ ] 전문가 상담 연결
+- [ ] 모바일 앱
 
 ## ⚠️ 주의사항
 
-- 이 앱은 **참고용**이며, 전문가의 진단을 대체할 수 없습니다
+이 애플리케이션은 **참고용**이며, 전문가의 정확한 진단을 대체할 수 없습니다.
 - 통증이나 불편함이 있다면 의료 전문가와 상담하세요
-- 운동 전 전문 트레이너의 지도를 받는 것이 좋습니다
+- 운동을 시작하기 전에 전문가의 조언을 구하세요
+- 개인의 건강 상태에 따라 결과가 다를 수 있습니다
 
-## 📄 라이선스
+## 📝 라이선스
 
-이 프로젝트는 개인/교육 목적으로 자유롭게 사용 가능합니다.
+이 프로젝트는 개인 학습 및 참고용으로 제작되었습니다.
+
+## 👨‍💻 개발자
+
+- **개발**: Claude (Anthropic AI Assistant)
+- **프로젝트 관리**: 사용자 협업
+- **배포**: Cloudflare Pages
+- **개발 환경**: GenSpark Sandbox
+
+## 📞 문의
+
+문제가 발생하거나 제안사항이 있다면 이슈를 등록해주세요.
 
 ---
 
-© 2024 근육 강도 시각화 & 자세 분석 웹앱
+**마지막 업데이트**: 2024-11-19
+**버전**: 1.0.0
+**상태**: ✅ 프로덕션 준비 완료
