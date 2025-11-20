@@ -43,12 +43,18 @@
 
 ## 🚀 URL 및 접근 정보
 
-### 개발 환경 (Sandbox)
+### 🌐 프로덕션 (Cloudflare Pages)
+- **메인 URL**: https://pilates-muscle-analyzer.pages.dev
+- **배포 URL**: https://9ab3b283.pilates-muscle-analyzer.pages.dev
+- **상태**: ✅ Active
+- **배포 플랫폼**: Cloudflare Pages
+
+### 🔧 개발 환경 (Sandbox)
 - **URL**: https://3000-i7pg3vh2uudp7x9e0xy02-583b4d74.sandbox.novita.ai
 - **API Health Check**: https://3000-i7pg3vh2uudp7x9e0xy02-583b4d74.sandbox.novita.ai/api/health
 - **상태**: ✅ Active
 
-### GitHub 저장소
+### 📦 GitHub 저장소
 - **저장소**: https://github.com/382apt-sketch/Pilates
 - **상태**: ✅ Active
 
