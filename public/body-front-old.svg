@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 500" width="200" height="500">
+  <!-- 전면 인체 실루엣 -->
+  <defs>
+    <style>
+      .body-outline { fill: #e0e0e0; stroke: #666; stroke-width: 2; }
+      .muscle-region { fill: #f2f2f2; stroke: #999; stroke-width: 1; cursor: pointer; transition: opacity 0.3s; }
+      .muscle-region:hover { opacity: 0.7; }
+    </style>
+  </defs>
+  
+  <!-- 머리 -->
+  <ellipse cx="100" cy="30" rx="20" ry="25" class="body-outline" />
+  
+  <!-- 목 -->
+  <rect x="90" y="50" width="20" height="20" class="body-outline" />
+  
+  <!-- 목 굴곡근 (Neck Flexors) -->
+  <rect id="m_neck_flexors" x="92" y="52" width="16" height="16" class="muscle-region" data-muscle="neck_flexors" />
+  
+  <!-- 몸통 상부 -->
+  <ellipse cx="100" cy="120" rx="50" ry="60" class="body-outline" />
+  
+  <!-- 대흉근 (Pectoralis Major) - 좌우 -->
+  <ellipse id="m_pec_major_left" cx="80" cy="100" rx="20" ry="25" class="muscle-region" data-muscle="pec_major" />
+  <ellipse id="m_pec_major_right" cx="120" cy="100" rx="20" ry="25" class="muscle-region" data-muscle="pec_major" />
+  
+  <!-- 전면 삼각근 (Anterior Deltoid) - 좌우 -->
+  <circle id="m_anterior_delt_left" cx="60" cy="95" r="15" class="muscle-region" data-muscle="anterior_delt" />
+  <circle id="m_anterior_delt_right" cx="140" cy="95" r="15" class="muscle-region" data-muscle="anterior_delt" />
+  
+  <!-- 팔 -->
+  <rect x="45" y="90" width="10" height="80" class="body-outline" />
+  <rect x="145" y="90" width="10" height="80" class="body-outline" />
+  
+  <!-- 복직근 (Rectus Abdominis) -->
+  <rect id="m_abs" x="85" y="130" width="30" height="40" rx="5" class="muscle-region" data-muscle="abs" />
+  
+  <!-- 골반 -->
+  <ellipse cx="100" cy="200" rx="45" ry="30" class="body-outline" />
+  
+  <!-- 고관절 굴곡근 (Hip Flexors) - 좌우 -->
+  <ellipse id="m_hip_flexors_left" cx="85" cy="210" rx="12" ry="20" class="muscle-region" data-muscle="hip_flexors" />
+  <ellipse id="m_hip_flexors_right" cx="115" cy="210" rx="12" ry="20" class="muscle-region" data-muscle="hip_flexors" />
+  
+  <!-- 허벅지 -->
+  <rect x="75" y="230" width="20" height="120" class="body-outline" />
+  <rect x="105" y="230" width="20" height="120" class="body-outline" />
+  
+  <!-- 대퇴사두근 (Quadriceps) - 좌우 -->
+  <rect id="m_quadriceps_left" x="77" y="240" width="16" height="100" rx="3" class="muscle-region" data-muscle="quadriceps" />
+  <rect id="m_quadriceps_right" x="107" y="240" width="16" height="100" rx="3" class="muscle-region" data-muscle="quadriceps" />
+  
+  <!-- 종아리 -->
+  <polygon points="80,350 75,450 85,450 90,350" class="body-outline" />
+  <polygon points="110,350 105,450 115,450 120,350" class="body-outline" />
+  
+  <!-- 발 -->
+  <ellipse cx="80" cy="465" rx="10" ry="8" class="body-outline" />
+  <ellipse cx="110" cy="465" rx="10" ry="8" class="body-outline" />
+</svg>

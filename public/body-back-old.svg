@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 500" width="200" height="500">
+  <!-- 후면 인체 실루엣 -->
+  <defs>
+    <style>
+      .body-outline { fill: #e0e0e0; stroke: #666; stroke-width: 2; }
+      .muscle-region { fill: #f2f2f2; stroke: #999; stroke-width: 1; cursor: pointer; transition: opacity 0.3s; }
+      .muscle-region:hover { opacity: 0.7; }
+    </style>
+  </defs>
+  
+  <!-- 머리 -->
+  <ellipse cx="100" cy="30" rx="20" ry="25" class="body-outline" />
+  
+  <!-- 목 -->
+  <rect x="90" y="50" width="20" height="20" class="body-outline" />
+  
+  <!-- 목 신전근 (Neck Extensors) -->
+  <rect id="m_neck_extensors" x="92" y="52" width="16" height="16" class="muscle-region" data-muscle="neck_extensors" />
+  
+  <!-- 몸통 상부 -->
+  <ellipse cx="100" cy="120" rx="50" ry="60" class="body-outline" />
+  
+  <!-- 승모근 상부 (Upper Trapezius) -->
+  <path id="m_upper_trap" d="M 70 75 Q 100 70 130 75 L 125 95 Q 100 90 75 95 Z" class="muscle-region" data-muscle="upper_trap" />
+  
+  <!-- 승모근 중부 (Mid Trapezius) - 좌우 -->
+  <ellipse id="m_mid_trap_left" cx="75" cy="110" rx="15" ry="20" class="muscle-region" data-muscle="mid_trap" />
+  <ellipse id="m_mid_trap_right" cx="125" cy="110" rx="15" ry="20" class="muscle-region" data-muscle="mid_trap" />
+  
+  <!-- 승모근 하부 (Lower Trapezius) - 좌우 -->
+  <path id="m_lower_trap_left" d="M 70 120 L 80 145 L 90 130 Z" class="muscle-region" data-muscle="lower_trap" />
+  <path id="m_lower_trap_right" d="M 130 120 L 120 145 L 110 130 Z" class="muscle-region" data-muscle="lower_trap" />
+  
+  <!-- 능형근 (Rhomboids) -->
+  <rect id="m_rhomboids" x="85" y="115" width="30" height="25" rx="3" class="muscle-region" data-muscle="rhomboids" />
+  
+  <!-- 팔 -->
+  <rect x="45" y="90" width="10" height="80" class="body-outline" />
+  <rect x="145" y="90" width="10" height="80" class="body-outline" />
+  
+  <!-- 척추기립근 (Erector Spinae / Lower Back) -->
+  <rect id="m_lower_back" x="85" y="145" width="30" height="40" rx="5" class="muscle-region" data-muscle="lower_back" />
+  
+  <!-- 골반 -->
+  <ellipse cx="100" cy="200" rx="45" ry="30" class="body-outline" />
+  
+  <!-- 둔근 (Gluteus Maximus) - 좌우 -->
+  <ellipse id="m_glutes_left" cx="85" cy="210" rx="18" ry="25" class="muscle-region" data-muscle="glutes" />
+  <ellipse id="m_glutes_right" cx="115" cy="210" rx="18" ry="25" class="muscle-region" data-muscle="glutes" />
+  
+  <!-- 허벅지 -->
+  <rect x="75" y="230" width="20" height="120" class="body-outline" />
+  <rect x="105" y="230" width="20" height="120" class="body-outline" />
+  
+  <!-- 햄스트링 (Hamstrings) - 좌우 -->
+  <rect id="m_hamstrings_left" x="77" y="240" width="16" height="90" rx="3" class="muscle-region" data-muscle="hamstrings" />
+  <rect id="m_hamstrings_right" x="107" y="240" width="16" height="90" rx="3" class="muscle-region" data-muscle="hamstrings" />
+  
+  <!-- 종아리 -->
+  <polygon points="80,350 75,450 85,450 90,350" class="body-outline" />
+  <polygon points="110,350 105,450 115,450 120,350" class="body-outline" />
+  
+  <!-- 종아리근 (Gastrocnemius / Calves) - 좌우 -->
+  <ellipse id="m_calves_left" cx="80" cy="380" rx="8" ry="30" class="muscle-region" data-muscle="calves" />
+  <ellipse id="m_calves_right" cx="110" cy="380" rx="8" ry="30" class="muscle-region" data-muscle="calves" />
+  
+  <!-- 발 -->
+  <ellipse cx="80" cy="465" rx="10" ry="8" class="body-outline" />
+  <ellipse cx="110" cy="465" rx="10" ry="8" class="body-outline" />
+</svg>
