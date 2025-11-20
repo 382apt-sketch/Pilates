@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 800" style="background: #f8f8f8;">
+  <!-- 후면 인체 근육 맵 - 25개 근육 -->
+  
+  <!-- 머리/목 후면 (2개) -->
+  <!-- 두반극근 -->
+  <path id="m_splenius_capitis" class="muscle"
+    d="M 170,75 Q 165,85 163,95 L 160,110 Q 158,120 162,130 L 168,138 Q 173,135 176,128 L 179,115 Q 181,100 178,90 Z
+       M 230,75 Q 235,85 237,95 L 240,110 Q 242,120 238,130 L 232,138 Q 227,135 224,128 L 221,115 Q 219,100 222,90 Z"
+    fill="#bb99ff" opacity="0.7" stroke="#000" stroke-width="1"/>
+  
+  <!-- 후두하근군 -->
+  <ellipse id="m_suboccipital" cx="200" cy="80" rx="25" ry="15"
+    fill="#cc99ff" opacity="0.6" stroke="#000" stroke-width="1"/>
+  
+  <!-- 어깨/등 상부 (11개) -->
+  <!-- 승모근 상부 -->
+  <path id="m_upper_trap" class="muscle"
+    d="M 140,100 Q 130,110 125,125 L 120,145 Q 118,160 122,175 L 135,188 Q 150,195 165,198 L 185,200 L 215,198 Q 230,195 245,190 L 265,180 Q 275,170 278,155 L 280,135 Q 282,120 275,110 L 265,100 Q 250,95 235,93 L 200,90 L 165,93 Q 150,95 140,100 Z"
+    fill="#8888ff" opacity="0.8" stroke="#000" stroke-width="2"/>
+  
+  <!-- 승모근 중부 -->
+  <path id="m_mid_trap" class="muscle"
+    d="M 125,180 Q 115,190 112,205 L 110,225 Q 108,240 115,255 L 125,268 Q 138,275 155,278 L 175,280 L 200,280 L 225,280 L 245,278 Q 262,275 275,268 L 285,255 Q 292,240 290,225 L 288,205 Q 285,190 275,180 Z"
+    fill="#9999ff" opacity="0.8" stroke="#000" stroke-width="2"/>
+  
+  <!-- 승모근 하부 -->
+  <path id="m_lower_trap" class="muscle"
+    d="M 135,270 Q 125,280 120,295 L 115,315 Q 113,330 118,345 L 128,358 Q 140,365 155,368 L 175,370 L 200,370 L 225,370 L 245,368 Q 260,365 272,358 L 282,345 Q 287,330 285,315 L 280,295 Q 275,280 265,270 Z"
+    fill="#aaaaff" opacity="0.8" stroke="#000" stroke-width="2"/>
+  
+  <!-- 능형근 -->
+  <path id="m_rhomboids" class="muscle"
+    d="M 160,205 Q 155,215 153,228 L 150,245 Q 148,260 152,275 L 160,288 Q 168,293 178,290 L 188,285 Q 192,275 192,260 L 192,240 Q 192,225 188,215 Z
+       M 240,205 Q 245,215 247,228 L 250,245 Q 252,260 248,275 L 240,288 Q 232,293 222,290 L 212,285 Q 208,275 208,260 L 208,240 Q 208,225 212,215 Z"
+    fill="#9988ff" opacity="0.7" stroke="#000" stroke-width="1"/>
+  
+  <!-- 견갑거근 -->
+  <path id="m_levator_scapulae" class="muscle"
+    d="M 155,100 Q 150,110 148,123 L 145,140 Q 143,155 147,168 L 153,178 Q 158,175 161,168 L 164,153 Q 166,135 163,120 Z
+       M 245,100 Q 250,110 252,123 L 255,140 Q 257,155 253,168 L 247,178 Q 242,175 239,168 L 236,153 Q 234,135 237,120 Z"
+    fill="#aa99ff" opacity="0.7" stroke="#000" stroke-width="1"/>
+  
+  <!-- 후면 삼각근 -->
+  <path id="m_posterior_delt" class="muscle"
+    d="M 105,160 Q 95,170 90,185 L 85,205 Q 83,220 87,235 L 95,248 Q 103,243 110,233 L 115,218 Q 117,200 115,185 Z
+       M 295,160 Q 305,170 310,185 L 315,205 Q 317,220 313,235 L 305,248 Q 297,243 290,233 L 285,218 Q 283,200 285,185 Z"
+    fill="#bb88ff" opacity="0.8" stroke="#000" stroke-width="2"/>
+  
+  <!-- 극상근 (회전근개) -->
+  <ellipse id="m_supraspinatus" cx="140" cy="175" rx="20" ry="12"
+    fill="#cc99dd" opacity="0.7" stroke="#000" stroke-width="1"/>
+  <ellipse cx="260" cy="175" rx="20" ry="12"
+    fill="#cc99dd" opacity="0.7" stroke="#000" stroke-width="1"/>
+  
+  <!-- 극하근 (회전근개) -->
+  <path id="m_infraspinatus" class="muscle"
+    d="M 125,185 Q 120,195 118,208 L 115,225 Q 113,238 117,250 L 125,260 Q 133,255 138,245 L 142,230 Q 144,215 142,202 Z
+       M 275,185 Q 280,195 282,208 L 285,225 Q 287,238 283,250 L 275,260 Q 267,255 262,245 L 258,230 Q 256,215 258,202 Z"
+    fill="#dd88ff" opacity="0.7" stroke="#000" stroke-width="1"/>
+  
+  <!-- 소원근 (회전근개) -->
+  <ellipse id="m_teres_minor" cx="135" cy="220" rx="15" ry="18"
+    fill="#ee99dd" opacity="0.7" stroke="#000" stroke-width="1"/>
+  <ellipse cx="265" cy="220" rx="15" ry="18"
+    fill="#ee99dd" opacity="0.7" stroke="#000" stroke-width="1"/>
+  
+  <!-- 견갑하근 (회전근개 - 내부이지만 위치 표시) -->
+  <ellipse id="m_subscapularis" cx="145" cy="200" rx="18" ry="22"
+    fill="#ff99dd" opacity="0.5" stroke="#000" stroke-width="1" stroke-dasharray="3,3"/>
+  <ellipse cx="255" cy="200" rx="18" ry="22"
+    fill="#ff99dd" opacity="0.5" stroke="#000" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- 대원근 -->
+  <path id="m_teres_major" class="muscle"
+    d="M 120,235 Q 115,245 113,258 L 110,275 Q 108,288 112,300 L 120,310 Q 128,305 133,295 L 137,280 Q 139,265 137,252 Z
+       M 280,235 Q 285,245 287,258 L 290,275 Q 292,288 288,300 L 280,310 Q 272,305 267,295 L 263,280 Q 261,265 263,252 Z"
+    fill="#ff88dd" opacity="0.7" stroke="#000" stroke-width="1"/>
+  
+  <!-- 광배근 -->
+  <path id="m_latissimus_dorsi" class="muscle"
+    d="M 130,260 Q 120,275 115,295 L 110,320 Q 108,345 115,368 L 125,388 Q 138,400 155,405 L 175,408 L 200,410 L 225,408 L 245,405 Q 262,400 275,388 L 285,368 Q 292,345 290,320 L 285,295 Q 280,275 270,260 Z"
+    fill="#dd77dd" opacity="0.8" stroke="#000" stroke-width="2"/>
+  
+  <!-- 허리/척추 (3개) -->
+  <!-- 척추기립근 -->
+  <g id="m_erector_spinae" class="muscle">
+    <rect x="175" y="285" width="50" height="150" fill="#ffaa77" opacity="0.8" stroke="#000" stroke-width="2"/>
+    <line x1="200" y1="285" x2="200" y2="435" stroke="#000" stroke-width="2"/>
+    <line x1="175" y1="335" x2="225" y2="335" stroke="#000" stroke-width="1"/>
+    <line x1="175" y1="385" x2="225" y2="385" stroke="#000" stroke-width="1"/>
+  </g>
+  
+  <!-- 요방형근 -->
+  <path id="m_quadratus_lumborum" class="muscle"
+    d="M 165,345 Q 160,355 158,368 L 155,385 Q 153,400 157,413 L 163,423 Q 168,420 171,410 L 174,393 Q 176,375 173,360 Z
+       M 235,345 Q 240,355 242,368 L 245,385 Q 247,400 243,413 L 237,423 Q 232,420 229,410 L 226,393 Q 224,375 227,360 Z"
+    fill="#ffbb88" opacity="0.7" stroke="#000" stroke-width="1"/>
+  
+  <!-- 다열근 -->
+  <rect id="m_multifidus" x="188" y="290" width="24" height="140"
+    fill="#ffcc99" opacity="0.6" stroke="#000" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- 둔부 (4개) -->
+  <!-- 대둔근 -->
+  <path id="m_gluteus_maximus" class="muscle"
+    d="M 145,435 Q 135,445 130,460 L 125,485 Q 123,510 128,535 L 138,555 Q 150,565 165,568 L 185,570 L 200,570 L 215,570 L 235,568 Q 250,565 262,555 L 272,535 Q 277,510 275,485 L 270,460 Q 265,445 255,435 Z"
+    fill="#ff8899" opacity="0.9" stroke="#000" stroke-width="2"/>
+  
+  <!-- 중둔근 -->
+  <path id="m_gluteus_medius" class="muscle"
+    d="M 155,445 Q 148,455 145,470 L 142,490 Q 140,505 144,520 L 152,533 Q 160,538 170,535 L 180,530 Q 184,518 184,503 L 184,485 Q 184,470 180,458 Z
+       M 245,445 Q 252,455 255,470 L 258,490 Q 260,505 256,520 L 248,533 Q 240,538 230,535 L 220,530 Q 216,518 216,503 L 216,485 Q 216,470 220,458 Z"
+    fill="#ff99aa" opacity="0.8" stroke="#000" stroke-width="1"/>
+  
+  <!-- 소둔근 -->
+  <ellipse id="m_gluteus_minimus" cx="170" cy="490" rx="18" ry="25"
+    fill="#ffaabb" opacity="0.7" stroke="#000" stroke-width="1"/>
+  <ellipse cx="230" cy="490" rx="18" ry="25"
+    fill="#ffaabb" opacity="0.7" stroke="#000" stroke-width="1"/>
+  
+  <!-- 이상근 -->
+  <ellipse id="m_piriformis" cx="185" cy="530" rx="25" ry="15"
+    fill="#ffbbcc" opacity="0.7" stroke="#000" stroke-width="1"/>
+  <ellipse cx="215" cy="530" rx="25" ry="15"
+    fill="#ffbbcc" opacity="0.7" stroke="#000" stroke-width="1"/>
+  
+  <!-- 대퇴 후면 (햄스트링 세분화) -->
+  <!-- 대퇴이두근 -->
+  <path id="m_biceps_femoris" class="muscle"
+    d="M 140,565 Q 135,585 133,610 L 130,645 Q 128,675 132,700 L 138,720 Q 143,735 150,745 L 158,750 Q 163,745 168,733 L 173,710 Q 175,680 173,650 L 170,620 Q 168,595 164,578 Z
+       M 260,565 Q 265,585 267,610 L 270,645 Q 272,675 268,700 L 262,720 Q 257,735 250,745 L 242,750 Q 237,745 232,733 L 227,710 Q 225,680 227,650 L 230,620 Q 232,595 236,578 Z"
+    fill="#ff6677" opacity="0.8" stroke="#000" stroke-width="2"/>
+  
+  <!-- 반건양근 -->
+  <path id="m_semitendinosus" class="muscle"
+    d="M 185,570 Q 180,590 178,615 L 175,650 Q 173,680 176,705 L 180,727 Q 183,740 188,748 L 193,752 Q 197,747 200,737 L 203,713 Q 205,685 203,655 L 200,625 Q 198,600 195,583 Z"
+    fill="#ff7788" opacity="0.8" stroke="#000" stroke-width="1"/>
+  
+  <!-- 반막양근 -->
+  <path id="m_semimembranosus" class="muscle"
+    d="M 205,570 Q 210,590 212,615 L 215,650 Q 217,680 214,705 L 210,727 Q 207,740 202,748 L 197,752 Q 193,747 190,737 L 187,713 Q 185,685 187,655 L 190,625 Q 192,600 195,583 Z"
+    fill="#ff8899" opacity="0.8" stroke="#000" stroke-width="1"/>
+  
+  <!-- 하퇴 후면 (4개) -->
+  <!-- 비복근 -->
+  <path id="m_gastrocnemius" class="muscle"
+    d="M 165,665 Q 160,680 158,700 L 155,725 Q 153,745 157,760 L 163,772 Q 168,777 175,775 L 182,770 Q 186,758 187,743 L 188,720 Q 189,700 187,683 Z
+       M 235,665 Q 240,680 242,700 L 245,725 Q 247,745 243,760 L 237,772 Q 232,777 225,775 L 218,770 Q 214,758 213,743 L 212,720 Q 211,700 213,683 Z"
+    fill="#ff9988" opacity="0.8" stroke="#000" stroke-width="2"/>
+  
+  <!-- 가자미근 -->
+  <path id="m_soleus" class="muscle"
+    d="M 170,690 Q 165,705 163,725 L 160,750 Q 158,768 162,780 L 168,788 Q 173,785 177,775 L 180,757 Q 182,735 180,715 Z
+       M 230,690 Q 235,705 237,725 L 240,750 Q 242,768 238,780 L 232,788 Q 227,785 223,775 L 220,757 Q 218,735 220,715 Z"
+    fill="#ffaa99" opacity="0.7" stroke="#000" stroke-width="1"/>
+  
+  <!-- 족저근 -->
+  <path id="m_plantaris" class="muscle"
+    d="M 190,675 L 193,700 L 195,730 Q 196,750 198,765 L 200,778 L 202,765 Q 204,750 205,730 L 207,700 L 210,675"
+    fill="none" stroke="#ffbb99" stroke-width="6" opacity="0.6"/>
+  
+  <!-- 후경골근 -->
+  <ellipse id="m_tibialis_posterior" cx="180" cy="720" rx="8" ry="35"
+    fill="#ffcc99" opacity="0.6" stroke="#000" stroke-width="1"/>
+  <ellipse cx="220" cy="720" rx="8" ry="35"
+    fill="#ffcc99" opacity="0.6" stroke="#000" stroke-width="1"/>
+  
+  <!-- 레이블 -->
+  <text x="200" y="40" text-anchor="middle" fill="#333" font-size="20" font-weight="bold">후면 근육 맵</text>
+  <text x="200" y="60" text-anchor="middle" fill="#666" font-size="12">25개 주요 근육</text>
+  
+  <style>
+    .muscle {
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .muscle:hover {
+      opacity: 1 !important;
+      filter: brightness(1.2);
+    }
+  </style>
+</svg>

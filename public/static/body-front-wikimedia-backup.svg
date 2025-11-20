@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 1000" style="background: linear-gradient(to bottom, #f0f4f8 0%, #e6eef5 100%);">
+  <defs>
+    <!-- 근육 색상 정의 -->
+    <linearGradient id="neckGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9999;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ff7777;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="chestGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6666;stop-opacity:0.85" />
+      <stop offset="100%" style="stop-color:#ff4444;stop-opacity:0.85" />
+    </linearGradient>
+    <linearGradient id="shoulderGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8866;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ff6644;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="armGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff9977;stop-opacity:0.75" />
+      <stop offset="100%" style="stop-color:#ff7755;stop-opacity:0.75" />
+    </linearGradient>
+    <linearGradient id="absGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffcc88;stop-opacity:0.85" />
+      <stop offset="100%" style="stop-color:#ffaa66;stop-opacity:0.85" />
+    </linearGradient>
+    <linearGradient id="obliqueGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffbb77;stop-opacity:0.75" />
+      <stop offset="100%" style="stop-color:#ff9955;stop-opacity:0.75" />
+    </linearGradient>
+    <linearGradient id="legGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8899;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ff6677;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="calfGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffaa99;stop-opacity:0.75" />
+      <stop offset="100%" style="stop-color:#ff8877;stop-opacity:0.75" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 제목 -->
+  <text x="250" y="30" text-anchor="middle" fill="#2c3e50" font-size="28" font-weight="bold" font-family="Arial, sans-serif">전면 근육 맵</text>
+  <text x="250" y="55" text-anchor="middle" fill="#7f8c8d" font-size="16" font-family="Arial, sans-serif">22개 주요 근육 • 클릭하여 선택</text>
+  
+  <!-- 인체 베이스 실루엣 (참고용 - 매우 연한 색) -->
+  <g opacity="0.1">
+    <!-- 머리 -->
+    <ellipse cx="250" cy="110" rx="35" ry="45" fill="#34495e"/>
+    <!-- 목 -->
+    <rect x="235" y="150" width="30" height="30" rx="5" fill="#34495e"/>
+    <!-- 몸통 -->
+    <path d="M 190,180 Q 180,250 185,320 L 185,420 Q 185,450 195,480 L 200,520 Q 205,540 210,560 L 215,600
+             L 235,600 L 235,560 Q 238,540 240,520 L 245,480 Q 250,450 250,420 L 250,320 Q 250,250 250,180 Z
+             M 250,180 Q 250,250 250,320 L 250,420 Q 250,450 255,480 L 260,520 Q 262,540 265,560 L 265,600
+             L 285,600 L 290,560 Q 295,540 300,520 L 305,480 Q 315,450 315,420 L 315,320 Q 320,250 310,180 Z" 
+          fill="#34495e"/>
+    <!-- 팔 -->
+    <path d="M 150,200 Q 140,240 135,280 L 130,320 Q 128,360 130,400 L 132,440 Q 134,470 137,500" stroke="#34495e" stroke-width="25" fill="none"/>
+    <path d="M 350,200 Q 360,240 365,280 L 370,320 Q 372,360 370,400 L 368,440 Q 366,470 363,500" stroke="#34495e" stroke-width="25" fill="none"/>
+    <!-- 다리 -->
+    <path d="M 215,600 L 218,650 Q 220,700 220,750 L 220,850 Q 220,900 222,950" stroke="#34495e" stroke-width="35" fill="none"/>
+    <path d="M 285,600 L 282,650 Q 280,700 280,750 L 280,850 Q 280,900 278,950" stroke="#34495e" stroke-width="35" fill="none"/>
+  </g>
+  
+  <!-- 근육들 -->
+  
+  <!-- 목 근육 (2개) -->
+  <!-- 흉쇄유돌근 -->
+  <g id="m_sternocleidomastoid" class="muscle" opacity="0.8">
+    <path d="M 230,155 Q 225,165 223,175 L 220,190 Q 218,200 222,210 L 228,215 Q 233,212 235,205 L 237,190 Q 238,175 236,165 Z" 
+          fill="url(#neckGrad)" stroke="#c0392b" stroke-width="1"/>
+    <path d="M 270,155 Q 275,165 277,175 L 280,190 Q 282,200 278,210 L 272,215 Q 267,212 265,205 L 263,190 Q 262,175 264,165 Z" 
+          fill="url(#neckGrad)" stroke="#c0392b" stroke-width="1"/>
+  </g>
+  
+  <!-- 사각근 -->
+  <g id="m_scalenes" class="muscle" opacity="0.7">
+    <ellipse cx="223" cy="170" rx="8" ry="18" fill="#ffaaaa" stroke="#c0392b" stroke-width="0.5"/>
+    <ellipse cx="277" cy="170" rx="8" ry="18" fill="#ffaaaa" stroke="#c0392b" stroke-width="0.5"/>
+  </g>
+  
+  <!-- 어깨 (4개) -->
+  <!-- 전면 삼각근 -->
+  <g id="m_anterior_delt" class="muscle" opacity="0.85">
+    <path d="M 175,185 Q 165,195 160,210 L 155,230 Q 153,245 158,260 L 165,275 Q 172,270 177,258 L 182,240 Q 184,220 180,205 Z" 
+          fill="url(#shoulderGrad)" stroke="#d35400" stroke-width="1.5"/>
+    <path d="M 325,185 Q 335,195 340,210 L 345,230 Q 347,245 342,260 L 335,275 Q 328,270 323,258 L 318,240 Q 316,220 320,205 Z" 
+          fill="url(#shoulderGrad)" stroke="#d35400" stroke-width="1.5"/>
+  </g>
+  
+  <!-- 중간 삼각근 -->
+  <g id="m_middle_delt" class="muscle" opacity="0.75">
+    <path d="M 160,195 L 150,210 L 145,230 L 148,250 L 155,265 L 165,260 L 170,245 L 168,225 Z" 
+          fill="#ff9988" stroke="#d35400" stroke-width="1"/>
+    <path d="M 340,195 L 350,210 L 355,230 L 352,250 L 345,265 L 335,260 L 330,245 L 332,225 Z" 
+          fill="#ff9988" stroke="#d35400" stroke-width="1"/>
+  </g>
+  
+  <!-- 대흉근 -->
+  <g id="m_pec_major" class="muscle" opacity="0.9">
+    <path d="M 195,190 Q 185,200 180,215 L 175,240 Q 173,265 180,285 L 190,305 Q 205,315 220,318 L 240,320 L 250,320
+             L 260,320 L 280,318 Q 295,315 310,305 L 320,285 Q 327,265 325,240 L 320,215 Q 315,200 305,190 Z" 
+          fill="url(#chestGrad)" stroke="#c0392b" stroke-width="2"/>
+    <!-- 대흉근 분할선 -->
+    <line x1="250" y1="195" x2="250" y2="320" stroke="#c0392b" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  
+  <!-- 소흉근 (보이지 않지만 위치 표시) -->
+  <ellipse id="m_pec_minor" cx="250" cy="250" rx="35" ry="20" 
+           fill="#ff8888" opacity="0.4" stroke="#c0392b" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- 전거근 -->
+  <g id="m_serratus_anterior" class="muscle" opacity="0.75">
+    <path d="M 182,300 Q 177,310 175,322 L 173,338 Q 172,352 176,365 L 182,375 Q 188,372 192,362 L 195,345 Q 196,328 192,315 Z" 
+          fill="#ffaa88" stroke="#e67e22" stroke-width="1"/>
+    <path d="M 318,300 Q 323,310 325,322 L 327,338 Q 328,352 324,365 L 318,375 Q 312,372 308,362 L 305,345 Q 304,328 308,315 Z" 
+          fill="#ffaa88" stroke="#e67e22" stroke-width="1"/>
+  </g>
+  
+  <!-- 팔 근육 (2개) -->
+  <!-- 상완이두근 -->
+  <g id="m_biceps" class="muscle" opacity="0.8">
+    <ellipse cx="145" cy="320" rx="22" ry="55" fill="url(#armGrad)" stroke="#d35400" stroke-width="1.5"/>
+    <ellipse cx="355" cy="320" rx="22" ry="55" fill="url(#armGrad)" stroke="#d35400" stroke-width="1.5"/>
+  </g>
+  
+  <!-- 상완근 -->
+  <g id="m_brachialis" class="muscle" opacity="0.7">
+    <ellipse cx="145" cy="380" rx="18" ry="30" fill="#ff9988" stroke="#d35400" stroke-width="1"/>
+    <ellipse cx="355" cy="380" rx="18" ry="30" fill="#ff9988" stroke="#d35400" stroke-width="1"/>
+  </g>
+  
+  <!-- 복부 (6개) -->
+  <!-- 복직근 (6팩) -->
+  <g id="m_rectus_abdominis" class="muscle" opacity="0.9">
+    <!-- 상부 -->
+    <rect x="215" y="330" width="70" height="45" rx="5" fill="url(#absGrad)" stroke="#e67e22" stroke-width="2"/>
+    <!-- 중부 -->
+    <rect x="215" y="375" width="70" height="45" rx="5" fill="url(#absGrad)" stroke="#e67e22" stroke-width="2"/>
+    <!-- 하부 -->
+    <rect x="220" y="420" width="60" height="45" rx="5" fill="url(#absGrad)" stroke="#e67e22" stroke-width="2"/>
+    <!-- 복직근 분할선 -->
+    <line x1="250" y1="330" x2="250" y2="465" stroke="#e67e22" stroke-width="2" opacity="0.4"/>
+    <line x1="215" y1="375" x2="285" y2="375" stroke="#e67e22" stroke-width="1.5" opacity="0.3"/>
+    <line x1="215" y1="420" x2="285" y2="420" stroke="#e67e22" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  
+  <!-- 외복사근 -->
+  <g id="m_external_obliques" class="muscle" opacity="0.8">
+    <path d="M 190,340 Q 180,355 175,375 L 170,400 Q 168,425 172,450 L 178,475 Q 185,485 195,480 L 205,470 L 212,445 Q 215,415 212,385 L 207,360 Z" 
+          fill="url(#obliqueGrad)" stroke="#e67e22" stroke-width="1.5"/>
+    <path d="M 310,340 Q 320,355 325,375 L 330,400 Q 332,425 328,450 L 322,475 Q 315,485 305,480 L 295,470 L 288,445 Q 285,415 288,385 L 293,360 Z" 
+          fill="url(#obliqueGrad)" stroke="#e67e22" stroke-width="1.5"/>
+  </g>
+  
+  <!-- 내복사근 -->
+  <g id="m_internal_obliques" class="muscle" opacity="0.65">
+    <path d="M 195,360 L 185,375 L 180,395 Q 178,415 182,435 L 188,455 L 198,450 L 207,430 Q 210,408 207,390 Z" 
+          fill="#ffcc99" stroke="#e67e22" stroke-width="1"/>
+    <path d="M 305,360 L 315,375 L 320,395 Q 322,415 318,435 L 312,455 L 302,450 L 293,430 Q 290,408 293,390 Z" 
+          fill="#ffcc99" stroke="#e67e22" stroke-width="1"/>
+  </g>
+  
+  <!-- 복횡근 (깊은 근육) -->
+  <ellipse id="m_transverse_abdominis" cx="250" cy="400" rx="60" ry="50" 
+           fill="#ffddaa" opacity="0.4" stroke="#e67e22" stroke-width="1.5" stroke-dasharray="4,4"/>
+  
+  <!-- 횡격막 -->
+  <ellipse id="m_diaphragm" cx="250" cy="325" rx="70" ry="18" 
+           fill="#ffeebb" opacity="0.4" stroke="#e67e22" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- 골반저근 -->
+  <ellipse id="m_pelvic_floor" cx="250" cy="480" rx="45" ry="15" 
+           fill="#ffddcc" opacity="0.4" stroke="#e67e22" stroke-width="1" stroke-dasharray="3,3"/>
+  
+  <!-- 고관절/골반 (3개) -->
+  <!-- 장요근 -->
+  <g id="m_iliopsoas" class="muscle" opacity="0.75">
+    <path d="M 225,455 Q 220,470 218,488 L 215,510 Q 213,530 217,548 L 222,560 Q 227,555 230,545 L 233,525 Q 235,505 233,488 Z" 
+          fill="#ffaa99" stroke="#e74c3c" stroke-width="1"/>
+    <path d="M 275,455 Q 280,470 282,488 L 285,510 Q 287,530 283,548 L 278,560 Q 273,555 270,545 L 267,525 Q 265,505 267,488 Z" 
+          fill="#ffaa99" stroke="#e74c3c" stroke-width="1"/>
+  </g>
+  
+  <!-- 대퇴근막장근 (TFL) -->
+  <g id="m_tfl" class="muscle" opacity="0.75">
+    <path d="M 200,495 L 193,512 L 188,535 Q 186,555 190,575 L 196,590 L 203,585 L 210,565 Q 213,545 210,525 Z" 
+          fill="#ff99aa" stroke="#e74c3c" stroke-width="1"/>
+    <path d="M 300,495 L 307,512 L 312,535 Q 314,555 310,575 L 304,590 L 297,585 L 290,565 Q 287,545 290,525 Z" 
+          fill="#ff99aa" stroke="#e74c3c" stroke-width="1"/>
+  </g>
+  
+  <!-- 내전근군 -->
+  <g id="m_adductors" class="muscle" opacity="0.75">
+    <path d="M 235,555 Q 230,575 228,600 L 225,635 Q 223,665 227,690 L 232,710 L 240,705 L 245,680 Q 248,650 245,620 Z" 
+          fill="#ffbb99" stroke="#e74c3c" stroke-width="1"/>
+    <path d="M 265,555 Q 270,575 272,600 L 275,635 Q 277,665 273,690 L 268,710 L 260,705 L 255,680 Q 252,650 255,620 Z" 
+          fill="#ffbb99" stroke="#e74c3c" stroke-width="1"/>
+  </g>
+  
+  <!-- 대퇴사두근 (4개 통합) -->
+  <g id="m_rectus_femoris" class="muscle" opacity="0.85">
+    <!-- 대퇴직근 (중앙) -->
+    <path d="M 240,560 Q 235,585 233,615 L 230,660 Q 228,710 230,755 L 233,800 Q 235,830 240,855 L 245,870 Q 250,865 253,850 L 257,815 Q 260,770 258,720 L 255,665 Q 253,615 250,585 Z" 
+          fill="url(#legGrad)" stroke="#c0392b" stroke-width="1.5"/>
+    <path d="M 260,560 Q 265,585 267,615 L 270,660 Q 272,710 270,755 L 267,800 Q 265,830 260,855 L 255,870 Q 250,865 247,850 L 243,815 Q 240,770 242,720 L 245,665 Q 247,615 250,585 Z" 
+          fill="url(#legGrad)" stroke="#c0392b" stroke-width="1.5"/>
+  </g>
+  
+  <!-- 외측광근 -->
+  <g id="m_vastus_lateralis" class="muscle" opacity="0.75">
+    <path d="M 195,580 Q 190,610 188,650 L 185,700 Q 183,745 187,785 L 192,825 Q 196,855 202,880 L 208,895 Q 213,890 218,875 L 223,840 Q 227,795 225,745 L 222,690 Q 220,640 217,605 Z" 
+          fill="#ff8899" stroke="#c0392b" stroke-width="1"/>
+    <path d="M 305,580 Q 310,610 312,650 L 315,700 Q 317,745 313,785 L 308,825 Q 304,855 298,880 L 292,895 Q 287,890 282,875 L 277,840 Q 273,795 275,745 L 278,690 Q 280,640 283,605 Z" 
+          fill="#ff8899" stroke="#c0392b" stroke-width="1"/>
+  </g>
+  
+  <!-- 내측광근 -->
+  <g id="m_vastus_medialis" class="muscle" opacity="0.75">
+    <path d="M 248,650 Q 245,680 243,715 L 240,760 Q 238,800 242,835 L 246,865 Q 249,885 253,900 L 257,905 Q 260,900 262,890 L 265,865 Q 268,830 266,790 L 263,745 Q 260,705 257,670 Z" 
+          fill="#ff9988" stroke="#c0392b" stroke-width="1"/>
+  </g>
+  
+  <!-- 봉공근 (대각선 띠) -->
+  <path id="m_sartorius" class="muscle" d="M 305,515 Q 290,545 275,580 L 255,630 Q 242,675 235,720 L 230,765 Q 227,800 226,835" 
+        stroke="#ffaa77" stroke-width="10" fill="none" opacity="0.7"/>
+  
+  <!-- 하퇴 전면 (2개) -->
+  <!-- 전경골근 -->
+  <g id="m_tibialis_anterior" class="muscle" opacity="0.8">
+    <path d="M 228,880 Q 225,910 223,945 L 220,980 Q 219,1000 223,1015 L 227,1025 Q 232,1020 235,1008 L 238,980 Q 240,945 237,915 Z" 
+          fill="url(#calfGrad)" stroke="#e74c3c" stroke-width="1"/>
+    <path d="M 272,880 Q 275,910 277,945 L 280,980 Q 281,1000 277,1015 L 273,1025 Q 268,1020 265,1008 L 262,980 Q 260,945 263,915 Z" 
+          fill="url(#calfGrad)" stroke="#e74c3c" stroke-width="1"/>
+  </g>
+  
+  <!-- 장지신근 -->
+  <g id="m_extensor_digitorum_longus" class="muscle" opacity="0.65">
+    <path d="M 240,885 L 243,920 L 245,960 L 247,995 Q 248,1012 250,1025 L 252,1030 L 255,1028 L 257,1015 Q 258,992 257,965 L 255,925 L 253,890 Z" 
+          fill="#ffaa88" stroke="#e74c3c" stroke-width="0.8"/>
+    <path d="M 260,885 L 257,920 L 255,960 L 253,995 Q 252,1012 250,1025 L 248,1030 L 245,1028 L 243,1015 Q 242,992 243,965 L 245,925 L 247,890 Z" 
+          fill="#ffaa88" stroke="#e74c3c" stroke-width="0.8"/>
+  </g>
+  
+  <!-- 하단 레이블 -->
+  <text x="250" y="1060" text-anchor="middle" fill="#7f8c8d" font-size="12" font-family="Arial, sans-serif">
+    클릭하여 근육을 선택하세요
+  </text>
+  
+  <style>
+    .muscle {
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .muscle:hover {
+      opacity: 1 !important;
+      filter: brightness(1.3) drop-shadow(0 0 8px rgba(231, 76, 60, 0.6));
+      transform: scale(1.02);
+    }
+    .muscle:active {
+      transform: scale(0.98);
+    }
+  </style>
+</svg>
