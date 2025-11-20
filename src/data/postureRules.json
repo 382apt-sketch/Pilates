@@ -5,16 +5,17 @@
       "name_ko": "말린 어깨 (라운드 숄더)",
       "name_en": "Rounded Shoulders",
       "triggers": {
-        "weak": ["mid_trap", "lower_trap", "rhomboids"],
-        "strong": ["pec_major", "anterior_delt"]
+        "weak": ["mid_trap", "lower_trap", "rhomboids", "serratus_anterior"],
+        "strong": ["pec_major", "pec_minor", "anterior_delt"]
       },
-      "description_ko": "등 중부와 하부가 약하고 가슴과 전면 어깨가 강하면 어깨가 앞으로 말립니다.",
-      "description_en": "When mid/lower back is weak and chest/front shoulders are strong, shoulders round forward.",
+      "description_ko": "등 중부와 하부, 전거근이 약하고 가슴과 전면 어깨가 강하면 어깨가 앞으로 말립니다.",
+      "description_en": "When mid/lower back and serratus anterior are weak while chest and front shoulders are strong, shoulders round forward.",
       "recommended_exercises": [
         "페이스풀 (Face Pull)",
         "백 익스텐션 (Back Extension)",
         "가슴 스트레칭 (Chest Stretch)",
-        "밴드 풀 아파트 (Band Pull Apart)"
+        "밴드 풀 아파트 (Band Pull Apart)",
+        "전거근 강화 (Serratus Push-up)"
       ],
       "severity_calculation": "average"
     },
@@ -23,16 +24,17 @@
       "name_ko": "거북목",
       "name_en": "Forward Head Posture",
       "triggers": {
-        "weak": ["neck_flexors", "mid_trap"],
-        "strong": ["neck_extensors", "upper_trap"]
+        "weak": ["sternocleidomastoid", "mid_trap", "lower_trap"],
+        "strong": ["upper_trap", "levator_scapulae", "scalenes"]
       },
-      "description_ko": "목 앞쪽과 등 중부가 약하고 목 뒤쪽과 승모근 상부가 강하면 머리가 앞으로 나갑니다.",
-      "description_en": "When front neck and mid back are weak while back neck and upper traps are strong, head protrudes forward.",
+      "description_ko": "목 앞쪽과 등 중하부가 약하고 승모근 상부와 견갑거근이 강하면 머리가 앞으로 나갑니다.",
+      "description_en": "When front neck and mid/lower back are weak while upper traps and levator scapulae are strong, head protrudes forward.",
       "recommended_exercises": [
         "친 턱 (Chin Tuck)",
-        "목 굴곡 운동 (Neck Flexor Strengthening)",
+        "목 굴곡 운동 (Deep Neck Flexor Strengthening)",
         "등 상부 스트레칭 (Upper Back Stretch)",
-        "벽 천사 운동 (Wall Angels)"
+        "벽 천사 운동 (Wall Angels)",
+        "승모근 이완 (Upper Trap Release)"
       ],
       "severity_calculation": "average"
     },
@@ -41,16 +43,17 @@
       "name_ko": "골반 전방 경사",
       "name_en": "Anterior Pelvic Tilt",
       "triggers": {
-        "weak": ["abs", "glutes", "hamstrings"],
-        "strong": ["hip_flexors", "lower_back"]
+        "weak": ["rectus_abdominis", "external_obliques", "internal_obliques", "transverse_abdominis", "gluteus_maximus", "biceps_femoris", "semitendinosus", "semimembranosus"],
+        "strong": ["iliopsoas", "tfl", "erector_spinae", "quadratus_lumborum"]
       },
-      "description_ko": "복근, 둔근, 햄스트링이 약하고 고관절 굴곡근과 허리가 강하면 골반이 앞으로 기울어집니다.",
+      "description_ko": "복부 근육과 둔근, 햄스트링이 약하고 고관절 굴곡근과 허리가 강하면 골반이 앞으로 기울어집니다.",
       "description_en": "When abs, glutes, and hamstrings are weak while hip flexors and lower back are strong, pelvis tilts forward.",
       "recommended_exercises": [
         "데드버그 (Dead Bug)",
         "글루트 브릿지 (Glute Bridge)",
         "고관절 굴곡근 스트레칭 (Hip Flexor Stretch)",
-        "플랭크 (Plank)"
+        "플랭크 (Plank)",
+        "복횡근 활성화 (TVA Activation)"
       ],
       "severity_calculation": "average"
     },
@@ -59,8 +62,8 @@
       "name_ko": "골반 후방 경사",
       "name_en": "Posterior Pelvic Tilt",
       "triggers": {
-        "weak": ["lower_back", "hip_flexors"],
-        "strong": ["abs", "glutes"]
+        "weak": ["erector_spinae", "quadratus_lumborum", "iliopsoas"],
+        "strong": ["rectus_abdominis", "external_obliques", "gluteus_maximus"]
       },
       "description_ko": "허리와 고관절 굴곡근이 약하고 복근과 둔근이 과도하게 강하면 골반이 뒤로 기울어집니다.",
       "description_en": "When lower back and hip flexors are weak while abs and glutes are overly strong, pelvis tilts backward.",
@@ -68,7 +71,8 @@
         "코브라 자세 (Cobra Pose)",
         "허리 신전 운동 (Back Extension)",
         "햄스트링 스트레칭 (Hamstring Stretch)",
-        "고양이-소 자세 (Cat-Cow Stretch)"
+        "고양이-소 자세 (Cat-Cow Stretch)",
+        "다열근 강화 (Multifidus Activation)"
       ],
       "severity_calculation": "average"
     },
@@ -77,8 +81,8 @@
       "name_ko": "굽은 등 (후만증)",
       "name_en": "Thoracic Kyphosis",
       "triggers": {
-        "weak": ["mid_trap", "lower_trap", "rhomboids", "lower_back"],
-        "strong": ["pec_major", "abs"]
+        "weak": ["mid_trap", "lower_trap", "rhomboids", "erector_spinae", "multifidus", "posterior_delt"],
+        "strong": ["pec_major", "pec_minor", "rectus_abdominis"]
       },
       "description_ko": "등 전체가 약하고 가슴과 복부가 강하면 등이 굽습니다.",
       "description_en": "When entire back is weak and chest/abs are strong, upper back rounds excessively.",
@@ -86,7 +90,8 @@
         "등 신전 운동 (Thoracic Extension)",
         "로우 (Rowing)",
         "폼롤러 등 스트레칭 (Foam Roller Thoracic Extension)",
-        "Y-T-W 운동 (Y-T-W Raises)"
+        "Y-T-W 운동 (Y-T-W Raises)",
+        "후면 삼각근 강화 (Rear Delt Raise)"
       ],
       "severity_calculation": "average"
     },
@@ -95,16 +100,17 @@
       "name_ko": "무릎 외반 (X자 다리)",
       "name_en": "Knee Valgus",
       "triggers": {
-        "weak": ["glutes", "hamstrings"],
-        "strong": ["quadriceps"]
+        "weak": ["gluteus_medius", "gluteus_minimus", "biceps_femoris", "semitendinosus"],
+        "strong": ["rectus_femoris", "vastus_lateralis", "tfl", "adductors"]
       },
-      "description_ko": "둔근과 햄스트링이 약하고 대퇴사두근이 강하면 무릎이 안쪽으로 모입니다.",
-      "description_en": "When glutes and hamstrings are weak while quads are strong, knees cave inward.",
+      "description_ko": "중둔근과 햄스트링이 약하고 대퇴사두근과 내전근이 강하면 무릎이 안쪽으로 모입니다.",
+      "description_en": "When glute med/min and hamstrings are weak while quads and adductors are strong, knees cave inward.",
       "recommended_exercises": [
         "클램쉘 (Clamshell)",
         "사이드 레그 레이즈 (Side Leg Raise)",
         "글루트 브릿지 (Glute Bridge)",
-        "몬스터 워크 (Monster Walk)"
+        "몬스터 워크 (Monster Walk)",
+        "중둔근 강화 (Glute Med Activation)"
       ],
       "severity_calculation": "average"
     },
@@ -113,8 +119,8 @@
       "name_ko": "하부 교차 증후군",
       "name_en": "Lower Crossed Syndrome",
       "triggers": {
-        "weak": ["abs", "glutes"],
-        "strong": ["hip_flexors", "lower_back"]
+        "weak": ["rectus_abdominis", "external_obliques", "transverse_abdominis", "gluteus_maximus", "gluteus_medius"],
+        "strong": ["iliopsoas", "tfl", "erector_spinae", "quadratus_lumborum"]
       },
       "description_ko": "복근과 둔근이 약하고 고관절 굴곡근과 허리가 강한 전형적인 자세 불균형 패턴입니다.",
       "description_en": "A typical postural imbalance pattern with weak abs/glutes and tight hip flexors/lower back.",
@@ -122,7 +128,84 @@
         "플랭크 (Plank)",
         "버드독 (Bird Dog)",
         "고관절 굴곡근 스트레칭 (Hip Flexor Stretch)",
-        "글루트 활성화 (Glute Activation)"
+        "글루트 활성화 (Glute Activation)",
+        "복횡근 호흡 (TVA Breathing)"
+      ],
+      "severity_calculation": "average"
+    },
+    {
+      "id": "upper_crossed_syndrome",
+      "name_ko": "상부 교차 증후군",
+      "name_en": "Upper Crossed Syndrome",
+      "triggers": {
+        "weak": ["mid_trap", "lower_trap", "rhomboids", "serratus_anterior", "sternocleidomastoid"],
+        "strong": ["upper_trap", "levator_scapulae", "pec_major", "pec_minor"]
+      },
+      "description_ko": "등 중하부와 전거근, 목 앞쪽이 약하고 승모근 상부와 가슴이 강한 전형적인 상체 불균형 패턴입니다.",
+      "description_en": "A typical upper body imbalance pattern with weak mid/lower back and tight upper traps/chest.",
+      "recommended_exercises": [
+        "페이스풀 (Face Pull)",
+        "친 턱 (Chin Tuck)",
+        "가슴 도어프레임 스트레칭 (Doorway Chest Stretch)",
+        "견갑골 안정화 (Scapular Stabilization)",
+        "전거근 강화 (Serratus Push-up)"
+      ],
+      "severity_calculation": "average"
+    },
+    {
+      "id": "weak_core",
+      "name_ko": "약한 코어 (코어 불안정)",
+      "name_en": "Weak Core Stability",
+      "triggers": {
+        "weak": ["transverse_abdominis", "multifidus", "pelvic_floor", "diaphragm", "internal_obliques"],
+        "strong": []
+      },
+      "description_ko": "깊은 코어 근육(복횡근, 다열근, 골반저근, 횡격막)이 약하면 척추 안정성이 떨어집니다.",
+      "description_en": "When deep core muscles (TVA, multifidus, pelvic floor, diaphragm) are weak, spinal stability decreases.",
+      "recommended_exercises": [
+        "복횡근 호흡 (TVA Breathing)",
+        "데드버그 (Dead Bug)",
+        "버드독 (Bird Dog)",
+        "골반저근 케겔 (Pelvic Floor Kegel)",
+        "다열근 활성화 (Multifidus Activation)"
+      ],
+      "severity_calculation": "average"
+    },
+    {
+      "id": "scapular_dyskinesis",
+      "name_ko": "견갑골 운동이상증",
+      "name_en": "Scapular Dyskinesis",
+      "triggers": {
+        "weak": ["serratus_anterior", "lower_trap", "rhomboids", "mid_trap"],
+        "strong": ["upper_trap", "levator_scapulae", "pec_minor"]
+      },
+      "description_ko": "전거근과 등 중하부가 약하고 승모근 상부가 강하면 견갑골 움직임이 비정상적입니다.",
+      "description_en": "When serratus anterior and mid/lower back are weak while upper traps are strong, scapular movement becomes abnormal.",
+      "recommended_exercises": [
+        "전거근 푸시업 (Serratus Push-up)",
+        "견갑골 리트랙션 (Scapular Retraction)",
+        "Y-T-W 운동 (Y-T-W Raises)",
+        "벽 슬라이드 (Wall Slide)",
+        "밴드 풀 아파트 (Band Pull Apart)"
+      ],
+      "severity_calculation": "average"
+    },
+    {
+      "id": "rotator_cuff_imbalance",
+      "name_ko": "회전근개 불균형",
+      "name_en": "Rotator Cuff Imbalance",
+      "triggers": {
+        "weak": ["infraspinatus", "teres_minor", "supraspinatus", "subscapularis"],
+        "strong": ["anterior_delt", "pec_major", "latissimus_dorsi"]
+      },
+      "description_ko": "회전근개가 약하고 큰 근육들이 강하면 어깨 안정성이 떨어집니다.",
+      "description_en": "When rotator cuff is weak and large muscles are strong, shoulder stability decreases.",
+      "recommended_exercises": [
+        "외회전 운동 (External Rotation)",
+        "내회전 운동 (Internal Rotation)",
+        "쇼핑 카트 (Shopping Cart)",
+        "슬리퍼 슬라이드 (Sleeper Stretch)",
+        "밴드 회전 (Band Rotation)"
       ],
       "severity_calculation": "average"
     }

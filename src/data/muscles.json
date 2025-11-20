@@ -1,48 +1,53 @@
 [
   {
+    "id": "sternocleidomastoid",
+    "label_ko": "흉쇄유돌근",
+    "label_en": "Sternocleidomastoid",
+    "side": "front",
+    "svg_region_id": "m_sternocleidomastoid",
+    "default_strength": "normal",
+    "description": "목의 측면 근육으로 머리를 회전하고 굽히는 역할을 합니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "scalenes",
+    "label_ko": "사각근",
+    "label_en": "Scalenes",
+    "side": "front",
+    "svg_region_id": "m_scalenes",
+    "default_strength": "normal",
+    "description": "목의 측면 깊은 근육으로 목의 굴곡과 측굴을 돕습니다.",
+    "pilates_importance": "medium"
+  },
+  {
     "id": "pec_major",
     "label_ko": "대흉근",
     "label_en": "Pectoralis Major",
     "side": "front",
     "svg_region_id": "m_pec_major",
     "default_strength": "normal",
-    "description": "가슴의 큰 근육으로 팔을 앞으로 움직이고 회전시킵니다."
+    "description": "가슴의 큰 근육으로 팔을 앞으로 움직이고 회전시킵니다.",
+    "pilates_importance": "high"
   },
   {
-    "id": "upper_trap",
-    "label_ko": "승모근 상부",
-    "label_en": "Upper Trapezius",
-    "side": "back",
-    "svg_region_id": "m_upper_trap",
+    "id": "pec_minor",
+    "label_ko": "소흉근",
+    "label_en": "Pectoralis Minor",
+    "side": "front",
+    "svg_region_id": "m_pec_minor",
     "default_strength": "normal",
-    "description": "목과 어깨를 연결하는 근육으로 어깨를 올리는 역할을 합니다."
+    "description": "대흉근 아래 작은 근육으로 견갑골을 앞으로 당기고 내립니다.",
+    "pilates_importance": "high"
   },
   {
-    "id": "mid_trap",
-    "label_ko": "승모근 중부",
-    "label_en": "Mid Trapezius",
-    "side": "back",
-    "svg_region_id": "m_mid_trap",
+    "id": "serratus_anterior",
+    "label_ko": "전거근",
+    "label_en": "Serratus Anterior",
+    "side": "front",
+    "svg_region_id": "m_serratus_anterior",
     "default_strength": "normal",
-    "description": "견갑골을 안쪽으로 당기는 역할을 합니다."
-  },
-  {
-    "id": "lower_trap",
-    "label_ko": "승모근 하부",
-    "label_en": "Lower Trapezius",
-    "side": "back",
-    "svg_region_id": "m_lower_trap",
-    "default_strength": "normal",
-    "description": "견갑골을 아래로 내리고 안정화시킵니다."
-  },
-  {
-    "id": "rhomboids",
-    "label_ko": "능형근",
-    "label_en": "Rhomboids",
-    "side": "back",
-    "svg_region_id": "m_rhomboids",
-    "default_strength": "normal",
-    "description": "견갑골을 척추 쪽으로 당기는 역할을 합니다."
+    "description": "갈비뼈에서 견갑골로 연결되는 근육으로 날개뼈를 안정화시킵니다.",
+    "pilates_importance": "very_high"
   },
   {
     "id": "anterior_delt",
@@ -51,87 +56,417 @@
     "side": "front",
     "svg_region_id": "m_anterior_delt",
     "default_strength": "normal",
-    "description": "어깨 앞쪽 근육으로 팔을 앞으로 들어올립니다."
+    "description": "어깨 앞쪽 근육으로 팔을 앞으로 들어올립니다.",
+    "pilates_importance": "high"
   },
   {
-    "id": "abs",
+    "id": "middle_delt",
+    "label_ko": "중간 삼각근",
+    "label_en": "Middle Deltoid",
+    "side": "front",
+    "svg_region_id": "m_middle_delt",
+    "default_strength": "normal",
+    "description": "어깨 중간 근육으로 팔을 옆으로 들어올립니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "biceps",
+    "label_ko": "상완이두근",
+    "label_en": "Biceps Brachii",
+    "side": "front",
+    "svg_region_id": "m_biceps",
+    "default_strength": "normal",
+    "description": "팔 앞쪽 근육으로 팔꿈치를 굽힙니다.",
+    "pilates_importance": "medium"
+  },
+  {
+    "id": "brachialis",
+    "label_ko": "상완근",
+    "label_en": "Brachialis",
+    "side": "front",
+    "svg_region_id": "m_brachialis",
+    "default_strength": "normal",
+    "description": "이두근 아래의 근육으로 팔꿈치 굽힘의 주동근입니다.",
+    "pilates_importance": "low"
+  },
+  {
+    "id": "rectus_abdominis",
     "label_ko": "복직근",
     "label_en": "Rectus Abdominis",
     "side": "front",
     "svg_region_id": "m_abs",
     "default_strength": "normal",
-    "description": "복부 중앙의 근육으로 몸통을 굽히는 역할을 합니다."
+    "description": "복부 중앙의 근육으로 몸통을 굽히는 역할을 합니다.",
+    "pilates_importance": "very_high"
   },
   {
-    "id": "lower_back",
+    "id": "external_obliques",
+    "label_ko": "외복사근",
+    "label_en": "External Obliques",
+    "side": "front",
+    "svg_region_id": "m_external_obliques",
+    "default_strength": "normal",
+    "description": "복부 측면의 근육으로 몸통을 회전하고 굽힙니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "internal_obliques",
+    "label_ko": "내복사근",
+    "label_en": "Internal Obliques",
+    "side": "front",
+    "svg_region_id": "m_internal_obliques",
+    "default_strength": "normal",
+    "description": "외복사근 아래의 깊은 근육으로 몸통 회전과 안정화를 돕습니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "transverse_abdominis",
+    "label_ko": "복횡근",
+    "label_en": "Transverse Abdominis",
+    "side": "front",
+    "svg_region_id": "m_transverse_abdominis",
+    "default_strength": "normal",
+    "description": "가장 깊은 복부 근육으로 코어 안정화의 핵심입니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "diaphragm",
+    "label_ko": "횡격막",
+    "label_en": "Diaphragm",
+    "side": "front",
+    "svg_region_id": "m_diaphragm",
+    "default_strength": "normal",
+    "description": "흉부와 복부를 나누는 근육으로 호흡의 주동근입니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "iliopsoas",
+    "label_ko": "장요근",
+    "label_en": "Iliopsoas",
+    "side": "front",
+    "svg_region_id": "m_hip_flexors",
+    "default_strength": "normal",
+    "description": "고관절을 굽히는 가장 강력한 근육입니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "tfl",
+    "label_ko": "대퇴근막장근",
+    "label_en": "Tensor Fasciae Latae",
+    "side": "front",
+    "svg_region_id": "m_tfl",
+    "default_strength": "normal",
+    "description": "고관절 굴곡과 외전을 돕고 장경인대를 긴장시킵니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "adductors",
+    "label_ko": "내전근군",
+    "label_en": "Adductors",
+    "side": "front",
+    "svg_region_id": "m_adductors",
+    "default_strength": "normal",
+    "description": "허벅지 안쪽 근육으로 다리를 모으는 역할을 합니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "rectus_femoris",
+    "label_ko": "대퇴직근",
+    "label_en": "Rectus Femoris",
+    "side": "front",
+    "svg_region_id": "m_quadriceps",
+    "default_strength": "normal",
+    "description": "대퇴사두근 중 유일하게 고관절을 가로지르는 근육입니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "vastus_lateralis",
+    "label_ko": "외측광근",
+    "label_en": "Vastus Lateralis",
+    "side": "front",
+    "svg_region_id": "m_quadriceps",
+    "default_strength": "normal",
+    "description": "대퇴사두근의 외측 부분으로 무릎을 펍니다.",
+    "pilates_importance": "medium"
+  },
+  {
+    "id": "vastus_medialis",
+    "label_ko": "내측광근",
+    "label_en": "Vastus Medialis",
+    "side": "front",
+    "svg_region_id": "m_quadriceps",
+    "default_strength": "normal",
+    "description": "대퇴사두근의 내측 부분으로 무릎 안정화에 중요합니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "sartorius",
+    "label_ko": "봉공근",
+    "label_en": "Sartorius",
+    "side": "front",
+    "svg_region_id": "m_sartorius",
+    "default_strength": "normal",
+    "description": "인체에서 가장 긴 근육으로 고관절과 무릎을 굽힙니다.",
+    "pilates_importance": "medium"
+  },
+  {
+    "id": "tibialis_anterior",
+    "label_ko": "전경골근",
+    "label_en": "Tibialis Anterior",
+    "side": "front",
+    "svg_region_id": "m_tibialis_anterior",
+    "default_strength": "normal",
+    "description": "정강이 앞쪽 근육으로 발등을 들어올립니다.",
+    "pilates_importance": "medium"
+  },
+  {
+    "id": "upper_trap",
+    "label_ko": "승모근 상부",
+    "label_en": "Upper Trapezius",
+    "side": "back",
+    "svg_region_id": "m_upper_trap",
+    "default_strength": "normal",
+    "description": "목과 어깨를 연결하는 근육으로 어깨를 올리는 역할을 합니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "mid_trap",
+    "label_ko": "승모근 중부",
+    "label_en": "Mid Trapezius",
+    "side": "back",
+    "svg_region_id": "m_mid_trap",
+    "default_strength": "normal",
+    "description": "견갑골을 안쪽으로 당기는 역할을 합니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "lower_trap",
+    "label_ko": "승모근 하부",
+    "label_en": "Lower Trapezius",
+    "side": "back",
+    "svg_region_id": "m_lower_trap",
+    "default_strength": "normal",
+    "description": "견갑골을 아래로 내리고 안정화시킵니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "rhomboids",
+    "label_ko": "능형근",
+    "label_en": "Rhomboids",
+    "side": "back",
+    "svg_region_id": "m_rhomboids",
+    "default_strength": "normal",
+    "description": "견갑골을 척추 쪽으로 당기는 역할을 합니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "levator_scapulae",
+    "label_ko": "견갑거근",
+    "label_en": "Levator Scapulae",
+    "side": "back",
+    "svg_region_id": "m_levator_scapulae",
+    "default_strength": "normal",
+    "description": "목에서 견갑골로 연결되어 견갑골을 들어올립니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "posterior_delt",
+    "label_ko": "후면 삼각근",
+    "label_en": "Posterior Deltoid",
+    "side": "back",
+    "svg_region_id": "m_posterior_delt",
+    "default_strength": "normal",
+    "description": "어깨 뒤쪽 근육으로 팔을 뒤로 당깁니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "supraspinatus",
+    "label_ko": "극상근",
+    "label_en": "Supraspinatus",
+    "side": "back",
+    "svg_region_id": "m_supraspinatus",
+    "default_strength": "normal",
+    "description": "회전근개 중 하나로 어깨를 외전시키고 안정화합니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "infraspinatus",
+    "label_ko": "극하근",
+    "label_en": "Infraspinatus",
+    "side": "back",
+    "svg_region_id": "m_infraspinatus",
+    "default_strength": "normal",
+    "description": "회전근개 중 하나로 어깨를 외회전시킵니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "teres_minor",
+    "label_ko": "소원근",
+    "label_en": "Teres Minor",
+    "side": "back",
+    "svg_region_id": "m_teres_minor",
+    "default_strength": "normal",
+    "description": "회전근개 중 하나로 어깨 외회전을 돕습니다.",
+    "pilates_importance": "medium"
+  },
+  {
+    "id": "subscapularis",
+    "label_ko": "견갑하근",
+    "label_en": "Subscapularis",
+    "side": "back",
+    "svg_region_id": "m_subscapularis",
+    "default_strength": "normal",
+    "description": "회전근개 중 유일한 내회전근으로 견갑골 앞면에 있습니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "teres_major",
+    "label_ko": "대원근",
+    "label_en": "Teres Major",
+    "side": "back",
+    "svg_region_id": "m_teres_major",
+    "default_strength": "normal",
+    "description": "어깨를 내전하고 내회전시킵니다.",
+    "pilates_importance": "medium"
+  },
+  {
+    "id": "latissimus_dorsi",
+    "label_ko": "광배근",
+    "label_en": "Latissimus Dorsi",
+    "side": "back",
+    "svg_region_id": "m_latissimus_dorsi",
+    "default_strength": "normal",
+    "description": "등의 가장 넓은 근육으로 팔을 당기고 내회전시킵니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "erector_spinae",
     "label_ko": "척추기립근",
     "label_en": "Erector Spinae",
     "side": "back",
     "svg_region_id": "m_lower_back",
     "default_strength": "normal",
-    "description": "등 아래쪽 근육으로 척추를 펴고 자세를 유지합니다."
+    "description": "척추를 펴고 자세를 유지하는 긴 근육군입니다.",
+    "pilates_importance": "very_high"
   },
   {
-    "id": "hip_flexors",
-    "label_ko": "고관절 굴곡근",
-    "label_en": "Hip Flexors",
-    "side": "front",
-    "svg_region_id": "m_hip_flexors",
+    "id": "quadratus_lumborum",
+    "label_ko": "요방형근",
+    "label_en": "Quadratus Lumborum",
+    "side": "back",
+    "svg_region_id": "m_quadratus_lumborum",
     "default_strength": "normal",
-    "description": "허벅지를 몸통 쪽으로 당기는 근육입니다."
+    "description": "허리의 깊은 근육으로 척추를 측굴하고 안정화합니다.",
+    "pilates_importance": "very_high"
   },
   {
-    "id": "glutes",
-    "label_ko": "둔근",
+    "id": "multifidus",
+    "label_ko": "다열근",
+    "label_en": "Multifidus",
+    "side": "back",
+    "svg_region_id": "m_multifidus",
+    "default_strength": "normal",
+    "description": "척추의 깊은 안정화 근육으로 분절적 제어를 담당합니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "gluteus_maximus",
+    "label_ko": "대둔근",
     "label_en": "Gluteus Maximus",
     "side": "back",
     "svg_region_id": "m_glutes",
     "default_strength": "normal",
-    "description": "엉덩이의 큰 근육으로 고관절을 펴고 안정화시킵니다."
+    "description": "엉덩이의 가장 큰 근육으로 고관절을 펴고 외회전시킵니다.",
+    "pilates_importance": "very_high"
   },
   {
-    "id": "hamstrings",
-    "label_ko": "햄스트링",
-    "label_en": "Hamstrings",
+    "id": "gluteus_medius",
+    "label_ko": "중둔근",
+    "label_en": "Gluteus Medius",
+    "side": "back",
+    "svg_region_id": "m_gluteus_medius",
+    "default_strength": "normal",
+    "description": "골반 안정화의 핵심 근육으로 고관절을 외전시킵니다.",
+    "pilates_importance": "very_high"
+  },
+  {
+    "id": "gluteus_minimus",
+    "label_ko": "소둔근",
+    "label_en": "Gluteus Minimus",
+    "side": "back",
+    "svg_region_id": "m_gluteus_minimus",
+    "default_strength": "normal",
+    "description": "중둔근과 함께 골반을 안정화하고 고관절을 외전시킵니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "piriformis",
+    "label_ko": "이상근",
+    "label_en": "Piriformis",
+    "side": "back",
+    "svg_region_id": "m_piriformis",
+    "default_strength": "normal",
+    "description": "골반 깊은 곳의 근육으로 고관절을 외회전시킵니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "biceps_femoris",
+    "label_ko": "대퇴이두근",
+    "label_en": "Biceps Femoris",
     "side": "back",
     "svg_region_id": "m_hamstrings",
     "default_strength": "normal",
-    "description": "허벅지 뒤쪽 근육으로 무릎을 굽히고 고관절을 펍니다."
+    "description": "햄스트링의 외측 부분으로 무릎을 굽히고 고관절을 펍니다.",
+    "pilates_importance": "high"
   },
   {
-    "id": "quadriceps",
-    "label_ko": "대퇴사두근",
-    "label_en": "Quadriceps",
-    "side": "front",
-    "svg_region_id": "m_quadriceps",
+    "id": "semitendinosus",
+    "label_ko": "반건양근",
+    "label_en": "Semitendinosus",
+    "side": "back",
+    "svg_region_id": "m_hamstrings",
     "default_strength": "normal",
-    "description": "허벅지 앞쪽 근육으로 무릎을 펴는 역할을 합니다."
+    "description": "햄스트링의 내측 부분으로 무릎을 굽히고 내회전시킵니다.",
+    "pilates_importance": "high"
   },
   {
-    "id": "calves",
-    "label_ko": "종아리근",
+    "id": "semimembranosus",
+    "label_ko": "반막양근",
+    "label_en": "Semimembranosus",
+    "side": "back",
+    "svg_region_id": "m_hamstrings",
+    "default_strength": "normal",
+    "description": "햄스트링의 내측 깊은 부분으로 무릎 안정화에 기여합니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "gastrocnemius",
+    "label_ko": "비복근",
     "label_en": "Gastrocnemius",
     "side": "back",
     "svg_region_id": "m_calves",
     "default_strength": "normal",
-    "description": "종아리 근육으로 발목을 펴고 걷는데 중요합니다."
+    "description": "종아리의 표층 근육으로 발목을 펴고 무릎을 굽힙니다.",
+    "pilates_importance": "medium"
   },
   {
-    "id": "neck_flexors",
-    "label_ko": "목 굴곡근",
-    "label_en": "Neck Flexors",
-    "side": "front",
-    "svg_region_id": "m_neck_flexors",
-    "default_strength": "normal",
-    "description": "목 앞쪽 근육으로 머리를 앞으로 숙입니다."
-  },
-  {
-    "id": "neck_extensors",
-    "label_ko": "목 신전근",
-    "label_en": "Neck Extensors",
+    "id": "soleus",
+    "label_ko": "가자미근",
+    "label_en": "Soleus",
     "side": "back",
-    "svg_region_id": "m_neck_extensors",
+    "svg_region_id": "m_soleus",
     "default_strength": "normal",
-    "description": "목 뒤쪽 근육으로 머리를 뒤로 젖힙니다."
+    "description": "종아리의 깊은 근육으로 자세 안정화에 중요합니다.",
+    "pilates_importance": "high"
+  },
+  {
+    "id": "pelvic_floor",
+    "label_ko": "골반저근",
+    "label_en": "Pelvic Floor",
+    "side": "front",
+    "svg_region_id": "m_pelvic_floor",
+    "default_strength": "normal",
+    "description": "골반 아래를 지지하는 근육군으로 코어 안정화의 기초입니다.",
+    "pilates_importance": "very_high"
   }
 ]
